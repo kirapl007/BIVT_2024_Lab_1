@@ -198,13 +198,14 @@ public partial class Program
     }
     public double Task_1_12(double x)
     {
-        double answer = 1;
+        double answer = 0;
         // code here
         double k = 1;
-        for (double i = 1; i <= 10; i++)
+        for (double i = 0; i <= 10; i++)
         {
-            k *= x;
-            answer += (1.0 / k);
+            
+            answer += k;
+            k/= x;
         }
         answer = Math.Round(answer, 2);
 
@@ -327,7 +328,6 @@ public partial class Program
         {
             while (k <= p)
             {
-                break;
                 answer += 1;
                 k += a + answer * h;
             }
